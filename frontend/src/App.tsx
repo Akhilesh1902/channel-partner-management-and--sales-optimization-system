@@ -1,14 +1,12 @@
-import { useState } from "react";
 import "./App.css";
-import { Button } from "./components/ui/button";
+import Registration from "./features/Registration/Registration";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Button onClick={() => setCount((p) => p + 1)}>Hello There</Button>
-      <h1>{count}</h1>
+      <div className="w-screen flex justify-center">
+        <Registration />
+      </div>
     </>
   );
 }
