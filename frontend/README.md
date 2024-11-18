@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Ecme - The Ultimate React, Vite & TypeScript Web Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ecme  is a modern and responsive admin dashboard template built with React and TypeScript. Designed to provide a highly customizable and easy-to-use platform for building admin interfaces, it includes a variety of reusable components, pre-designed pages, and dynamic features. 
 
-Currently, two official plugins are available:
+This template is perfect for developing dashboards, web applications, CRM systems, e-commerce backends, and more. Whether you're building a small-scale admin panel or a large-scale enterprise application, Ecme is designed to be flexible and scalable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Features:
+- **Responsive Layout**: Optimized for all screen sizes and devices.
+- **Dark/Light Mode**: Easily switch between light and dark themes.
+- **Configurable Themes**: Personalize colors, layouts, and more to fit your needs.
+- **Built with React + TypeScript**: Ensures robust type-checking and fast development.
+- **Multi-Locale Support**: Easily add and manage multiple languages.
+- **RTL Support**: Full Right-to-Left support for languages like Arabic or Hebrew.
+- **Tailwind Component-Based Architecture**: Reusable components to streamline your development process.
+- **API Ready**: Simple integration with any RESTful API.
 
-## Expanding the ESLint configuration
+---
+### Demo
+Check out the [Live Demo](https://ecme-react.themenate.net/) to explore the template in action.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+### Guide
+Please visit our [Online documentation](https://ecme-react.themenate.net/guide/documentation/introduction) for detailed guides, setup instructions, and customization options.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```

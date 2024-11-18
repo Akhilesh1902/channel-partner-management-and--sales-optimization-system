@@ -1,15 +1,27 @@
-import "./App.css";
-import Registration from "./features/Registration/Registration";
+import { BrowserRouter } from 'react-router-dom'
+import Theme from '@/components/template/Theme'
+import Layout from '@/components/layouts'
+import { AuthProvider } from '@/auth'
+import Views from '@/views'
+import appConfig from './configs/app.config'
+import './locales'
 
-function App() {
-  return (
-    <>
-      <div className="w-screen flex justify-center">
-        <Registration />
-      </div>
-    </>
-  );
+if (appConfig.enableMock) {
+    import('./mock')
 }
 
-export default App;
+function App() {
+    return (
+        <Theme>
+            <BrowserRouter>
+                <AuthProvider>
+                    <Layout>
+                        <Views />
+                    </Layout>
+                </AuthProvider>
+            </BrowserRouter>
+        </Theme>
+    )
+}
 
+export default App

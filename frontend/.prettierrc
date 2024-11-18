@@ -1,10 +1,5 @@
 {
-  "endOfLine": "crlf",
-  "tabWidth": 2,
-  "trailingComma": "es5",
-  "bracketSpacing": true,
-  "singleAttributePerLine": true,
-  "embeddedLanguageFormatting": "auto",
-  "singleQuote": false
+    "singleQuote": true,
+    "semi": false,
+    "tabWidth": 4
 }
-
